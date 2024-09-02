@@ -1,0 +1,174 @@
+2024-09-03 00:01:04 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 12892 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 00:01:04 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 00:01:04 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 00:01:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 00:01:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 00:01:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 00:01:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 00:01:05 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 00:01:05 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 00:01:05 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1015 ms
+2024-09-03 00:01:05 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'prettylogsApplication': Unsatisfied dependency expressed through field 'codeAnalysisService': Error creating bean with name 'codeAnalysisService' defined in file [C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes\com\ubs\prettylogs\service\CodeAnalysisService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'logRulesConfig': Could not bind properties to 'LogRulesConfig' : prefix=log, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-09-03 00:01:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-09-03 00:01:05 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-03 00:01:05 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target [Bindable@1f14ebd6 type = java.util.List<com.ubs.prettylogs.config.LogRulesConfig$Rule>, value = 'provided', annotations = array<Annotation>[[empty]], bindMethod = [null]] failed:
+
+    Property: log.rules[1].description
+    Value: "Log messages should not contain hard-coded strings."
+    Origin: class path resource [application.properties] - 27:26
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[1].enabled
+    Value: "true"
+    Origin: class path resource [application.properties] - 28:22
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[1].forbiddenpatterns
+    Value: ""^".*"$""
+    Origin: class path resource [application.properties] - 30:32
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[1].name
+    Value: "NoHardCodedStrings"
+    Origin: class path resource [application.properties] - 26:19
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[1].type
+    Value: "string"
+    Origin: class path resource [application.properties] - 29:19
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[2].allowedlevels
+    Value: "info,debug,warn,error"
+    Origin: class path resource [application.properties] - 36:28
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[2].description
+    Value: "Logs must use appropriate log levels."
+    Origin: class path resource [application.properties] - 33:26
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[2].enabled
+    Value: "true"
+    Origin: class path resource [application.properties] - 34:22
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[2].name
+    Value: "ProperLogLevel"
+    Origin: class path resource [application.properties] - 32:19
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[2].type
+    Value: "level"
+    Origin: class path resource [application.properties] - 35:19
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[3].description
+    Value: "Avoid excessive logging in loops or high-frequency operations."
+    Origin: class path resource [application.properties] - 39:26
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[3].enabled
+    Value: "true"
+    Origin: class path resource [application.properties] - 40:22
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[3].maxoccurrences
+    Value: "10"
+    Origin: class path resource [application.properties] - 42:29
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[3].name
+    Value: "AvoidExcessiveLogging"
+    Origin: class path resource [application.properties] - 38:19
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[3].type
+    Value: "frequency"
+    Origin: class path resource [application.properties] - 41:19
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[4].description
+    Value: "Ensure exceptions are logged with stack traces."
+    Origin: class path resource [application.properties] - 45:26
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[4].enabled
+    Value: "true"
+    Origin: class path resource [application.properties] - 46:22
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[4].name
+    Value: "ExceptionLogging"
+    Origin: class path resource [application.properties] - 44:19
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+    Property: log.rules[4].type
+    Value: "exception"
+    Origin: class path resource [application.properties] - 47:19
+    Reason: The elements [log.rules[1].description,log.rules[1].enabled,log.rules[1].forbiddenpatterns,log.rules[1].name,log.rules[1].type,log.rules[2].allowedlevels,log.rules[2].description,log.rules[2].enabled,log.rules[2].name,log.rules[2].type,log.rules[3].description,log.rules[3].enabled,log.rules[3].maxoccurrences,log.rules[3].name,log.rules[3].type,log.rules[4].description,log.rules[4].enabled,log.rules[4].name,log.rules[4].type] were left unbound.
+
+Action:
+
+Update your application's configuration
+
+2024-09-03 00:01:38 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 21420 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 00:01:38 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 00:01:38 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 00:01:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 00:01:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 00:01:39 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 00:01:39 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 00:01:39 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 00:01:40 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 00:01:40 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1118 ms
+2024-09-03 00:01:40 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - Info log is running!
+2024-09-03 00:01:40 [restartedMain] DEBUG c.ubs.prettylogs.service.LogTester - Debug log is running!
+2024-09-03 00:01:40 [restartedMain] ERROR c.ubs.prettylogs.service.LogTester - Error! null
+2024-09-03 00:01:40 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - 
+2024-09-03 00:01:40 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-03 00:01:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 00:01:40 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 2.283 seconds (process running for 2.702)
+2024-09-03 00:08:52 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 27100 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 00:08:52 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 00:08:52 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 00:08:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 00:08:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 00:08:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 00:08:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 00:08:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 00:08:54 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 00:08:54 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1123 ms
+2024-09-03 00:08:54 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - Info log is running!
+2024-09-03 00:08:54 [restartedMain] DEBUG c.ubs.prettylogs.service.LogTester - Debug log is running!
+2024-09-03 00:08:54 [restartedMain] ERROR c.ubs.prettylogs.service.LogTester - Error! null
+2024-09-03 00:08:54 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - 
+2024-09-03 00:08:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-03 00:08:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 00:08:54 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 2.328 seconds (process running for 2.76)
+2024-09-03 00:13:40 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 7904 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 00:13:40 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 00:13:40 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 00:13:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 00:13:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 00:13:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 00:13:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 00:13:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 00:13:41 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 00:13:41 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 865 ms
+2024-09-03 00:13:41 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - Info log is running!
+2024-09-03 00:13:41 [restartedMain] DEBUG c.ubs.prettylogs.service.LogTester - Debug log is running!
+2024-09-03 00:13:41 [restartedMain] ERROR c.ubs.prettylogs.service.LogTester - Error! null
+2024-09-03 00:13:41 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - 
+2024-09-03 00:13:41 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-03 00:13:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 00:13:41 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 1.899 seconds (process running for 2.354)
+2024-09-03 00:14:27 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 16720 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 00:14:27 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 00:14:27 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 00:14:27 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 00:14:27 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 00:14:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 00:14:28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 00:14:28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 00:14:28 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 00:14:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 890 ms
+2024-09-03 00:14:28 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - Info log is running!
+2024-09-03 00:14:28 [restartedMain] DEBUG c.ubs.prettylogs.service.LogTester - Debug log is running!
+2024-09-03 00:14:28 [restartedMain] ERROR c.ubs.prettylogs.service.LogTester - Error! null
+2024-09-03 00:14:28 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - 
+2024-09-03 00:14:29 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-03 00:14:29 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 00:14:29 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 1.97 seconds (process running for 2.362)
