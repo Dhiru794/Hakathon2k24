@@ -106,14 +106,12 @@ public class CodeAnalysisService {
         // This requires additional implementation to count occurrences
         // and ensure they do not exceed the maximum allowed occurrences.
         // For simplicity, this part is left as a placeholder.
-        System.out.println("Frequency Rule!!");
     }
 
     private void validateExceptionRule(LogRulesConfig.Rule rule, MethodCallExpr methodCall) {
         // Example logic to check if exceptions are logged with stack traces
         // This requires additional parsing to detect exception handling patterns.
         // For simplicity, this part is left as a placeholder.
-        System.out.println("Exception Rule!!");
     }
 
     private boolean isLogLevel(String methodName) {
