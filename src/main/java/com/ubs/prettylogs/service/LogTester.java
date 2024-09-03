@@ -17,5 +17,7 @@ public class LogTester {
 //        log.info("userId=123, requestId=abc123");
         log.error("Exception  is - {}",new Exception().getMessage());
         log.info("completed successfully userId - {} - {}", 123);
+
+        log.error("");
     }
 }

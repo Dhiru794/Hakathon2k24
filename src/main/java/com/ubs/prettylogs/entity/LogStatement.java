@@ -25,13 +25,13 @@ public class LogStatement {
     @JsonProperty("suggession")
     private final Suggestion suggestion;
 
-    public LogStatement(String timestamp, String level, String logger, String message) {
+    public LogStatement(String timestamp, String level, String logger, String message, Suggestion suggestion) {
         this.id = idCounter++;
         this.timestamp = timestamp;
         this.level = level;
         this.logger = logger;
         this.message = message;
-        this.suggestion = new Suggestion("default", message, "", ".{0-10}");
+        this.suggestion = suggestion;
     }
 
     // Nested Suggestion class
