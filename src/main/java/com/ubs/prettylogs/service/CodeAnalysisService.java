@@ -54,16 +54,16 @@ public class CodeAnalysisService {
                         System.out.println("Extracted log statement: " + scopeName + "." + methodName + "(" + logMessage + ") at line " + methodCall.getBegin().get().line);
 
                         // Validate the log statement using external rules
-                        validateLogStatement(methodCall, logMessage);
+                        validateLogStatement(methodCall, logMessage, methodName);
                     }
                 });
             }
         });
     }
 
-    private void validateLogStatement(MethodCallExpr methodCall, String logMessage) {
+    private void validateLogStatement(MethodCallExpr methodCall, String logMessage, String logLevel) {
         for (LogRulesConfig.Rule rule : logRulesConfig.getRules()) {
-            if (rule.isEnabled()) {
+            if (rule.isEnabled() && rule.getAllowedLevels().contains(logLevel)) {
                 switch (rule.getType()) {
                     case "string" -> validateStringRule(rule, methodCall, logMessage);
                     case "level" -> validateLevelRule(rule, methodCall);
@@ -102,16 +102,11 @@ public class CodeAnalysisService {
     }
 
     private void validateFrequencyRule(LogRulesConfig.Rule rule, MethodCallExpr methodCall) {
-        // Track frequency of log statements (example logic)
-        // This requires additional implementation to count occurrences
-        // and ensure they do not exceed the maximum allowed occurrences.
-        // For simplicity, this part is left as a placeholder.
+        // Example logic to track frequency (left as a placeholder)
     }
 
     private void validateExceptionRule(LogRulesConfig.Rule rule, MethodCallExpr methodCall) {
-        // Example logic to check if exceptions are logged with stack traces
-        // This requires additional parsing to detect exception handling patterns.
-        // For simplicity, this part is left as a placeholder.
+        // Example logic to check for exception logging (left as a placeholder)
     }
 
     private boolean isLogLevel(String methodName) {

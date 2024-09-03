@@ -8,11 +8,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class LogTester {
 
-    @PostConstruct
-    public void testLogs(){
+
+    public void testLogs() {
         log.info("Info log is running!");
         log.debug("Debug log is running!");
         log.error("Error! {}", new Exception().getMessage());
         log.info("");
+        log.info("Operation completed successfully, userId=123, requestId=abc123");
+        log.error("test error");
+        log.info("Operation completed successfully, userId=123");
     }
 }

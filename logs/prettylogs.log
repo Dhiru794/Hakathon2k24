@@ -172,3 +172,93 @@ Update your application's configuration
 2024-09-03 00:14:29 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 2024-09-03 00:14:29 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
 2024-09-03 00:14:29 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 1.97 seconds (process running for 2.362)
+2024-09-03 12:15:35 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 13400 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 12:15:35 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 12:15:35 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 12:15:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 12:15:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 12:15:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 12:15:36 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 12:15:36 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 12:15:37 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 12:15:37 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1057 ms
+2024-09-03 12:15:37 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - Info log is running!
+2024-09-03 12:15:37 [restartedMain] DEBUG c.ubs.prettylogs.service.LogTester - Debug log is running!
+2024-09-03 12:15:37 [restartedMain] ERROR c.ubs.prettylogs.service.LogTester - Error! null
+2024-09-03 12:15:37 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - 
+2024-09-03 12:15:37 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - Operation completed successfully, userId=123, requestId=abc123
+2024-09-03 12:15:37 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - Operation completed successfully, userId=123
+2024-09-03 12:15:37 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-03 12:15:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 12:15:37 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 2.269 seconds (process running for 2.8)
+2024-09-03 12:24:31 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 13048 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 12:24:31 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 12:24:31 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 12:24:31 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 12:24:31 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 12:24:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 12:24:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 12:24:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 12:24:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 12:24:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 977 ms
+2024-09-03 12:24:33 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - Operation completed successfully, userId=123, requestId=abc123
+2024-09-03 12:24:33 [restartedMain] ERROR c.ubs.prettylogs.service.LogTester - test error
+2024-09-03 12:24:33 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-03 12:24:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 12:24:33 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 2.097 seconds (process running for 2.497)
+2024-09-03 12:25:16 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 4264 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 12:25:16 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 12:25:16 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 12:25:16 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 12:25:16 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 12:25:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 12:25:17 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 12:25:17 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 12:25:17 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 12:25:17 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 958 ms
+2024-09-03 12:25:17 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - Operation completed successfully, userId=123, requestId=abc123
+2024-09-03 12:25:17 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - test error
+2024-09-03 12:25:18 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-03 12:25:18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 12:25:18 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 2.03 seconds (process running for 2.411)
+2024-09-03 12:26:46 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 17136 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 12:26:46 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 12:26:46 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 12:26:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 12:26:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 12:26:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 12:26:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 12:26:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 12:26:47 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 12:26:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 939 ms
+2024-09-03 12:26:48 [restartedMain] INFO  c.ubs.prettylogs.service.LogTester - Operation completed successfully, userId=123, requestId=abc123
+2024-09-03 12:26:48 [restartedMain] ERROR c.ubs.prettylogs.service.LogTester - test error
+2024-09-03 12:26:48 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-03 12:26:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 12:26:48 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 2.02 seconds (process running for 2.402)
+2024-09-03 12:40:01 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 24972 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 12:40:01 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 12:40:01 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 12:40:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 12:40:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 12:40:02 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 12:40:02 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 12:40:02 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 12:40:02 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 12:40:02 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 933 ms
+2024-09-03 12:40:03 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-03 12:40:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 12:40:03 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 1.996 seconds (process running for 2.422)
+2024-09-03 12:47:45 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Starting PrettylogsApplication using Java 17.0.12 with PID 1836 (C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs\target\classes started by Dhiraj Chaudhari in C:\Users\Dhiraj Chaudhari\Documents\Hackathon2K24\prettylogs\prettylogs)
+2024-09-03 12:47:45 [restartedMain] DEBUG c.u.prettylogs.PrettylogsApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-03 12:47:45 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 12:47:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03 12:47:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03 12:47:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-03 12:47:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-03 12:47:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 12:47:46 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-03 12:47:46 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1029 ms
+2024-09-03 12:47:47 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-03 12:47:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 12:47:47 [restartedMain] INFO  c.u.prettylogs.PrettylogsApplication - Started PrettylogsApplication in 2.304 seconds (process running for 2.718)
